@@ -1,5 +1,4 @@
 import random
-from tabulate import tabulate
 
 def grid(rows, cols):
     """Returns a grid containing grids according to specified rows and cols
