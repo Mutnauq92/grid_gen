@@ -15,7 +15,7 @@ def sweeper(grid):
     rows = len(grid)
     # set length of the first row as number of columns
     cols = len(grid[0])
-    # set the mine spots
+    # mine spots around the current spots, represented by tuples.
     spots = [
         (1,0), (-1,0), (0, -1), (0, 1),
         (-1,-1), (-1,1), (1,-1), (1,1)
