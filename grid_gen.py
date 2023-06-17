@@ -1,6 +1,6 @@
 import random
 
-def grid(rows, cols):
+def grid(rows:int, cols:int):
     """Returns a grid containing grids according to specified rows and cols
     
     :param rows: Number of rows each grid will have
@@ -31,7 +31,7 @@ def grid(rows, cols):
     to_file("logs.txt", grid)
     return grid
 
-def grids(rows, cols, n=1):
+def grids(rows:int, cols:int, n:int=1):
     """Returns a grid containing grids according to specified rows and cols
     
     :param rows: Number of rows each grid will have
@@ -60,7 +60,7 @@ def grids(rows, cols, n=1):
     except IndexError as ie:
         print("Please enter integer about 0")
 
-def to_file(filename, grid):
+def to_file(filename, grid:list):
     """This function writes the generated grid to a text file."""
     try:
         if not isinstance(grid[0][0], list):
@@ -91,7 +91,7 @@ def to_file(filename, grid):
     except IndexError as ie:
         print("Please enter integer about 0")
 
-def from_file(filename, begin=1, limit=None):
+def from_file(filename, begin:int=1, limit:int=None):
     """ If the value of argument n is not specified, all grids in history file will be returned
 
     :param filename: The name of the file to read from
