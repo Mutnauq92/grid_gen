@@ -42,7 +42,7 @@ def sweeper(grid):
 # create a variable and assign imported grid generation
 # read information from any text file.
 grids = grid_gen.from_file("logs.txt", 22, 25)
-grid = grids[0]
+grid = grids[1]
 result = sweeper(grid)
 print(tabulate(grid, tablefmt="simple_grid"))
 print(tabulate(result, tablefmt="simple_grid"))
